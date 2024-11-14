@@ -45,15 +45,15 @@ wn.bgpic("maze2.png") # other file names should be maze2.png, maze3.png
 # sample for loop:
 
 for step in range(3): # forward 3
-  move()
-
-for step in range(3):
+ turn_left()
+  
+for step in range(2):
+  for _ in range(3):
+    move()
   turn_left()
-move()
 
-for step in range(1):
-  move()
+move()
 
 #---- end robot movement 
 
-wn.mainloop() 
+wn.mainloop()
